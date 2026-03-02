@@ -1,0 +1,16 @@
+spring:
+  config:
+    import: azureAppConfiguration
+  cloud:
+    azure:
+      appconfiguration:
+        enabled: ${azure.appconfig.enabled:false}
+        stores:
+        - connection-string: ${azure.appconfig.connection-string}
+          feature-flags:
+            enabled: true
+          monitoring:
+            enabled: true
+            refresh-interval: 5s
+            triggers:
+            - key: sentinel
