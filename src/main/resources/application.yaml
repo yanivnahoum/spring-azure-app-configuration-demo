@@ -1,6 +1,7 @@
 spring:
   config:
-    import: azureAppConfiguration
+    # Will this work in 6.2.0?
+    import: optional:azureAppConfiguration
   cloud:
     azure:
       appconfiguration:
