@@ -18,7 +18,7 @@
             -javaagent:${settings.localRepository}/org/mockito/mockito-core/${mockito.version}/mockito-core-${mockito.version}.jar
             -Xshare:off
         </argLine>
-        <spring-cloud-azure-dependencies.version>7.0.0</spring-cloud-azure-dependencies.version>
+        <spring-cloud-azure-dependencies.version>7.1.0</spring-cloud-azure-dependencies.version>
     </properties>
 
     <dependencyManagement>
